@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Login</h1>
+
+<h4>Login with External Login</h4>
+<hr />
+<div class="row">
+    <h5>Choose one of the external Login:</h5>
+    <div class="col-md-3 mx-auto" style="width:200px">
+        <form asp-action="ExternalLogin" asp-controller="Account" asp-route-provider="Google" method="post">
+            <button type="submit" class="btn btn-primary ms-2">Google</button>
+        </form>
+    </div>
+    <div class="col-md-3 mx-auto" style="width:200px">
+        <form asp-action="ExternalLogin" asp-controller="Account" asp-route-provider="Microsoft" method="post">
+            <button type="submit" class="btn btn-primary ms-2">Microsoft</button>
+        </form>
+    </div>
+    <div class="col-md-3 mx-auto" style="width:200px">
+        <form asp-action="ExternalLogin" asp-controller="Account" asp-route-provider="Twitter" method="post">
+            <button type="submit" class="btn btn-primary ms-2">Twitter</button>
+        </form>
+    </div>
+    <div class="col-md-3 mx-auto" style="width:200px">
+        <form asp-action="ExternalLogin" asp-controller="Account" asp-route-provider="Facebook" method="post">
+            <button type="submit" class="btn btn-primary ms-2">Facebook</button>
+        </form>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4 mx-auto" style="width:200px">
+        <form asp-action="ExternalLogin" asp-controller="Account" asp-route-provider="GitHub" method="post">
+            <button type="submit" class="btn btn-primary ms-2">GitHub</button>
+        </form>
+    </div>
+    <div class="col-md-4 mx-auto" style="width:200px">
+        <form asp-action="ExternalLogin" asp-controller="Account" asp-route-provider="Yahoo" method="post">
+            <button type="submit" class="btn btn-primary ms-2">Yahoo</button>
+        </form>
+    </div>
+    <div class="col-md-4 mx-auto" style="width:200px">
+        <form asp-action="ExternalLogin" asp-controller="Account" asp-route-provider="LinkedIn" method="post">
+            <button type="submit" class="btn btn-primary ms-2">LinkedIn</button>
+        </form>
+    </div>
+</div>
